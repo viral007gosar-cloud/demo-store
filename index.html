@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>E-Shop</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <h1>E-Shop</h1>
+          <div class="cart icon">
+            <img id="cart_img" src="./assets/cart.svg" alt="cart" />
+            <div class="items_number_parent">
+              <div id="number_holder" class="items_number">0</div>
+            </div>
+
+            <div id="cart_list" class="hide_cart cart_dropdown">
+              <!-- dropdown products will goes here! -->
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <h2 class="sub_header">Product list:</h2>
+
+      <section class="products_container">
+        <!-- Products goes here -->
+      </section>
+
+      <!-- Modal template -->
+      <dialog id="dialogBox">
+        <header>
+          <h2 class="header">Product Details</h2>
+          <button id="closeDialogHeader">x</button>
+        </header>
+        <div class="product_card_img">
+          <img id="modal_img" src="" alt="product" />
+        </div>
+        <div class="product_card_content">
+          <h3 id="modal_title"></h3>
+          <p id="modal_price"></p>
+          <div class="icon product_card_actions">
+            <img
+              id="cart_action"
+              src="./assets/add-cart.svg"
+              alt="add to cart"
+              data-productId=""
+            />
+          </div>
+        </div>
+      </dialog>
+    </main>
+  </body>
+</html>
